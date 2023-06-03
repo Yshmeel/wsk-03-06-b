@@ -1,0 +1,292 @@
+body {
+    background: #888888;
+}
+
+/* Header styling */
+
+.header {
+    padding: 15px;
+    display: flex;
+    max-width: 1140px;
+    margin: 0 auto;
+}
+
+.header span {
+    font-weight: bold;
+    font-size: 26px;
+    color: #ddd;
+}
+
+.header__left {
+    flex: 1;
+}
+
+/* Buttons and headings */
+
+.btn {
+    padding: 10px 20px;
+    background: none;
+    border: none;
+    font-size: 14px;
+    cursor: pointer;
+    /* animate only background */
+    transition: background-color .2s ease;
+    display: block;
+}
+
+.btn:disabled {
+    cursor: not-allowed;
+    opacity: .6;
+}
+
+.btn-primary {
+    background: #25422c;
+    color: #fff;
+}
+
+.btn-primary:hover {
+    background: #3eaa59;
+}
+
+h3 {
+    margin: 0 0 10px;
+}
+
+
+/* Notifications */
+
+.notifications {
+    max-width: 1140px;
+    margin: 0 auto;
+}
+
+/* Form group styles */
+
+.form-group select, .form-group input {
+    padding: 10px;
+    background: #ececec;
+}
+
+.form-group label {
+    margin-left: 10px;
+}
+
+.form-group:not(:last-child) {
+    margin-bottom: 15px;
+}
+
+.form-group {
+    width: 100%;
+}
+
+.form-group input {
+    width: 100%;
+}
+
+.form-group.w50 {
+    width: 50%;
+}
+
+.form-group-row {
+    display: flex;
+}
+
+.form-group-row .form-group:not(:last-child) {
+    margin-right: 15px;
+}
+
+.form-group-row .form-group {
+    margin: 0;
+}
+
+input {
+    border: 1px solid #ddd;
+    padding: 10px;
+}
+
+/* Job list */
+
+.jobs {
+    margin: 20px auto;
+    max-width: 1140px;
+}
+
+.job__item__header {
+    padding: 15px;
+    background: #c0c0c0;
+    color: #505050;
+    display: flex;
+    align-items: center;
+}
+
+.job__item__header__left {
+    flex: 1;
+}
+
+.job__item__slide {
+    display: none;
+    padding: 15px;
+    background: #d0d0d0;
+    color: #434343;
+}
+
+.job__item__application__form--section form {
+    padding: 10px;
+    background: #f9f9f9;
+    border-radius: 4px;
+}
+
+.job__item__application__form--section select {
+    width: 220px;
+}
+
+/* styling button with close and open style */
+.job__item__header__right .btn, .job__item__slide--application--header__right button {
+    width: 36px;
+    height: 36px;
+    padding: 0;
+    border-radius: 100%;
+    background: #7e7e7e;
+    font-size: 24px;
+}
+
+
+.job__item__application__form--section:not(:last-child) {
+    margin-bottom: 15px;
+}
+
+.job__item__application__form--section h3 {
+    color: #777777;
+}
+
+.job__item__application__form--section label {
+    color: #5c5c5c;
+}
+
+.job__item__application__form {
+    margin-bottom: 15px;
+}
+
+.job__item__application__footer button {
+    font-size: 14px;
+    padding: 15px 25px;
+}
+
+.job__item__application__footer {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    margin: 0 auto;
+}
+
+.job__item__application__footer button {
+    width: 100%;
+}
+
+
+.job__item__slide--application--slide {
+    display: none;
+    background: #dedede;
+    margin: 15px -15px;
+    padding: 1px 15px 15px;
+}
+
+.job__item__slide--application--header {
+    display: flex;
+    align-items: center;
+}
+
+.job__item__slide--application--header__left {
+    flex: 1;
+}
+
+.job__item__slide--application:not(:last-child) {
+    margin-bottom: 15px;
+}
+
+.job__item__slide--application--contacts ul li {
+    list-style: none;
+}
+
+.job__item__slide--application--contacts ul {
+    padding: 0;
+}
+
+
+/* New job */
+
+.new-job {
+    max-width: 1140px;
+    margin: 0 auto;
+}
+
+.new-job form > .form-group label {
+    color: #fff;
+    margin-bottom: 5px;
+    display: block;
+}
+
+.new-job__competences--list {
+    display: flex;
+    flex-direction: column;
+
+    margin-bottom: 15px;
+}
+
+.new-job__competences--list--item {
+    display: flex;
+    flex-direction: row;
+    border: 1px solid #a5a5a5;
+    padding: 10px;
+}
+
+.new-job__competences--list--item--field {
+    display: flex;
+    flex-direction: column;
+}
+
+.new-job__competences {
+    background: #cdcdcd;
+    padding: 20px;
+    margin-bottom: 15px;
+}
+
+.new-job__competences--list--item--field:not(:last-child) {
+    margin-right: 15px;
+}
+
+.new-job__competences--list--item:not(:last-child) {
+    margin-bottom: 15px;
+}
+
+.new-job button {
+    width: 100%;
+}
+
+/* Alerts */
+
+
+.alert.alert-success {
+    padding: 10px 15px;
+    background: #3eaa56;
+    border-radius: 4px;
+    color: #fff;
+}
+
+.alert.alert-danger {
+    padding: 10px 15px;
+    background: #a40613;
+    border-radius: 4px;
+    color: #fff;
+    margin-bottom: 10px;
+}
+
+
+.alert ul {
+    margin: 0;
+    padding: 0;
+}
+
+.alert ul li {
+    list-style: none;
+}
